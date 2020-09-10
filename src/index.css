@@ -1,116 +1,28 @@
-*{
-    font-family: 'Mulish', sans-serif;
 
-}
-.navbar{
-    background-color: #fff;
-}
-.navbar-brand{
-    font-size:1.9rem;
-    color: #565387;
-}
-.navbar a{
-    font-size: 1.5rem;
+body{
+    background-color: #00a1bd;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    font-family: 'Josefin Sans', sans-serif;
+
     
 }
-.menu_active_Home{
-    font-weight: bold;
-}
-#header{
+div{
     width: 100%;
-    height: 80vh;
-    margin-top: 70px;
-}
-#header h1{
-    margin: 0 0 10px 0;
-    font-size: 48px;
-    font-weight: 700;
-    color: black;
-}
-#header h2{
-    color: #484848;
-    font-size: 24px;
-}
-.header-img{
-    text-align: right;
-}
-#header .animated{
-    animation: up-down 2s ease-in-out infinite alternate-reverse both;
-}
-@-webkit-keyframes up-down{
-    0%{
-        transform: translateY(10px);
-    }
-    100%{
-        transform: translateY(-10px);
-    }
-}
-@keyframes up-down{
-    0%{
-        transform: translateY(10px);
-    }
-    100%{
-        transform: translateY(-10px);
-    }
-}
-.menu_active{
-    font-weight: bold;
-    border-bottom: 1px solid #565387;
-}
-.link:hover{
-    color: #3498db;;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
-.brand-name{
-    color: #7952b3;
+h1{
+    
+    background-color: #ffe9c5;
+    padding: 20px 20px;
+    border-radius: 20px;
 }
-.footer-color{
-    background-color: #7952b3;
-}
-.social{
-    color: #fff;
-    cursor: pointer;
-}
-.company{
-    color: #fff;
-}
-.header-img{
-    text-align: right;
-}
-.Ne-stack{
-    color: blueviolet;
-}
-@media (max-width:991px){
-    #header{
-        height: 80vh;
-        text-align: center;
-    }
-    #header .header-img{
-        text-align: center;
-        margin-top: 45%;
-        
-    }
-   
-    #header .header-img img{
-        width: 60%;
-    }
-}
-@media (max-width:768px){
-    #header{
-        margin-top: 20px;
-    }
-    #header h1{
-        font-size: 28px;
-    }
-    #header h2{
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-    .F-page{
-        margin-top: 45%;
-        
-    }
-    #header .header-img img{
-        width: 70%;
-    }
+span{
+    color: #eb6383;
 }

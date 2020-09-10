@@ -1,28 +1,35 @@
-import React from 'react';
-//import '../node_modules/bootstrap/dist/css/bootstrap.mini.css';
-//import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
-import Home from './Home';
-import Contact from './Contact';
-import About from './About';
-import Services from './Services';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import React from 'react'
+let curDate=new Date();
+curDate=curDate.getHours();
+let greeting='';
+const cssStyle={}
+if(curDate >= 1 && curDate<12){
+  greeting='Good morning';
+  cssStyle.color='green'
 
+}
+else if(curDate>12 && curDate<4 ){
+  greeting='Good afternoon';
+  cssStyle.color='orange'
+  
+
+}
+else if(curDate>4 && curDate<8){
+  greeting='Good evening'
+  cssStyle.color='#ff4b5c'
+
+}
+else 
+{
+  greeting='Good night'
+  cssStyle.color='#d92027'
+ 
+}
 const App=()=>{
-  return( 
-    <>
-    <Navbar />
-    <Switch>
-    <Route  exact path ='/' component={Home}/>
-    <Route  exact path ='/contact' component={Contact}/>
-    <Route  exact path ='/about' component={About}/>
-    <Route  exact path ='/services' component={Services}/>
-    <Redirect to='/' />
-     </Switch>
-    <Footer />
-    </>
-    
+  return(
+    <div className='greeting'>
+    <h1>Hello buddy <span style={cssStyle}>{greeting}</span> 😃</h1>
+    </div>
   );
 }
 export default App;
