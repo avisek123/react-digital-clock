@@ -12,9 +12,9 @@ else if(curDate<18 ){
   greeting='Good afternoon';
   cssStyle.color='orange'
   
-
+ 
 }
-else if(curDate>20){
+else if(curDate<20){
   greeting='Good evening'
   cssStyle.color='#ff4b5c'
 
