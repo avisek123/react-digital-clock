@@ -3,18 +3,18 @@ let curDate=new Date();
 curDate=curDate.getHours();
 let greeting='';
 const cssStyle={}
-if(curDate >= 1 && curDate<12){
+if(curDate<12){
   greeting='Good morning';
   cssStyle.color='green'
 
 }
-else if(curDate>12 && curDate<4 ){
+else if(curDate<18 ){
   greeting='Good afternoon';
   cssStyle.color='orange'
   
 
 }
-else if(curDate>4 && curDate<8){
+else if(curDate>20){
   greeting='Good evening'
   cssStyle.color='#ff4b5c'
 
