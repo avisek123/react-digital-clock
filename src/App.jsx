@@ -1,35 +1,22 @@
-import React from 'react'
-let curDate=new Date();
-curDate=curDate.getHours();
-let greeting='';
-const cssStyle={}
-if(curDate<12){
-  greeting='Good morning';
-  cssStyle.color='green'
+import React, { useState } from "react";
 
-}
-else if(curDate<18 ){
-  greeting='Good afternoon';
-  cssStyle.color='orange'
-  
- 
-}
-else if(curDate<20){
-  greeting='Good evening'
-  cssStyle.color='#ff4b5c'
-
-}
-else 
+const App = ()=>
 {
-  greeting='Good night'
-  cssStyle.color='#d92027'
- 
-}
-const App=()=>{
-  return(
-    <div className='greeting'>
-    <h1>Hello buddy <span style={cssStyle}>{greeting}</span> 😃</h1>
-    </div>
-  );
+  let time=new Date().toLocaleTimeString();
+  const [currenttime,setcurrentTime]=useState("time");
+  const updateTime = () =>
+  {
+      let newtime =new Date().toLocaleTimeString();
+      setcurrentTime(newtime);
+     
+  }
+  setInterval(updateTime,1000);
+  
+    return (
+
+        <>
+        <h1>{currenttime}</h1>
+        </>
+    );
 }
 export default App;

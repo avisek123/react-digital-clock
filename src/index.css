@@ -1,7 +1,8 @@
 
 body{
-    background-color: #00a1bd;
-    background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-circles.png");
+
     box-sizing: border-box;
     margin: 0;
     padding: 0%;
@@ -19,9 +20,10 @@ div{
 }
 h1{
     
-   background-color: white;
-    padding: 20px 20px;
-    border-radius: 20px;
+
+    
+   color: white;
+    font-size: 5rem;
 }
 span{
     color: #eb6383;
